@@ -1,0 +1,22 @@
+Source: r-bioc-limma
+Section: gnu-r
+Priority: extra
+Maintainer: Apipe Tester <genome-dev@genome.wustl.edu>
+Build-Depends: debhelper (>= 7),
+               cdbs,
+               r-base-dev
+Standards-Version: 3.8.3
+Homepage: http://bioinf.wehi.edu.au/limma/
+
+Package: r-bioc-limma
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${R:Depends}
+Description: linear models for microarray data
+ A Bioconductor package for the analysis of gene expression microarray data,
+ especially the use of linear models for analysing designed experiments and the
+ assessment of differential expression. The package includes pre-processing
+ capabilities for two-colour spotted arrays. The differential expression methods
+ apply to all array platforms and treat Affymetrix, single channel and two
+ channel experiments in a unified way.
+
+

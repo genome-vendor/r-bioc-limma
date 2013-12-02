@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+debRreposname = bioc
+
+include /usr/share/R/debian/r-cran.mk
+
+DEB_INSTALL_CHANGELOGS_ALL = inst/doc/changelog.txt
+
+install/$(package)::
+	chmod 644 debian/$(package)/usr/lib/R/site-library/$(cranName)/CITATION
+	chmod 644 debian/$(package)/usr/lib/R/site-library/$(cranName)/doc/*
