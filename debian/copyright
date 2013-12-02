@@ -1,0 +1,30 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://www.bioconductor.org/packages/release/bioc/src/contrib/limma_3.18.1.tar.gz
+ inst/doc/usersguide.pdf is not accompanied by its source, and therefore removed in the “dfsg” version.
+Comment: licensing discussed on https://stat.ethz.ch/pipermail/bioc-devel/2011-May/002620.html
+License: GPL-2
+ LIMMA is LGPL-2+ code, and depends on R (GPL-2) and the GNU C
+ library (LGPL-2.1+). Taken as a whole, its license is effectively GPL-2, plus
+ perhaps some additional BSD-like requirements depending on what it uses from
+ the GNU C library.
+Files-Excluded: inst/doc/usersguide.pdf
+
+Files: *
+Copyright: 2005-2013 Gordon Smyth <smyth@wehi.edu.au>
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+Comment: On Debian systems, a copy of the GNU Library General Public version 2
+ is available in ‘/usr/share/common-licenses/LGPL-2’.
+
